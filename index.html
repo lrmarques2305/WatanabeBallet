@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Watanabe Ballet</title>
+        <style>
+            body
+            {
+                margin: 0;
+            }
+            h1{
+                color: #c979bc;
+                text-align: center;
+                font-size: 30px;
+                font-family: 'Damion', Georgia, serif;
+            }
+            video {
+                width: 100%    !important;
+                height: auto   !important;
+            }
+            .about
+            {
+                background-color: white;
+                min-height: 400px;
+                grid-area: about;
+            }
+            .contact
+            {
+                background-color: whitesmoke;
+                min-height: 400px;
+                margin: 0;
+                grid-area: contact;
+            }
+            .mainContainer
+            {
+                display: grid;
+                grid-template-areas:
+                'header'
+                'about'
+                'pricing'
+                'footer';
+                grid-template-rows: 400 400 400 200;
+                position: relative;
+            }
+            .videoArea
+            {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                grid-area: header;
+            }
+            .headerOverlay
+            {
+                z-index: 2;
+                margin: 0;
+                grid-area: header;
+                padding: 10px;
+                background-color: rgba(22, 22, 22, 0.25);
+            }
+
+            .headerOverlay>span
+            {
+                color: aliceblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mainContainer">
+            <div class="videoArea">
+                <video muted autoplay loop>
+                    <source src="principal.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="headerOverlay"> 
+                <span>Watanabe Ballet</span> 
+            </div>
+            <div class="about">
+                <h1>
+                    <span>Sobre Nós</span>
+                </h1>
+                <hr class="sectionTitle">
+
+                <div style="border: black 1px solid; display: block;" >
+                    <div style="display: flex; flex-direction: column; column-count: 3;" >
+                        <div style="display: flex; float: left; height: 300px; width: 400px; column-count: 1;">
+                            <img src="https://img1.wsimg.com/isteam/stock/17568/:/rs=w:1200,h:600,cg:true,m/cr=w:1200,h:600">
+                        </div>
+                        <div style="display: flex;">
+                            <p>Somos uma escola de ballet onde <p>
+                        </div>
+                    </div>
+                    <div >
+                        <div style="display: flex; float: right; height: 300px; width: 400px">
+                            <img src="https://img1.wsimg.com/isteam/stock/17568/:/rs=w:1200,h:600,cg:true,m/cr=w:1200,h:600">
+                        </div>
+                        <div>
+                            <p>Somos uma escola de ballet onde <p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <h1>Horários e Preços</h1>
+                <hr class="sectionTitle">
+
+
+                <p>Não tem um horário que te atenda? não se preocupe entre em contato conosco, constantemente avaliamos a abertura de nnovas turmas<p>
+            </div>
+            <div style="background-color: black;">
+                
+            </div>
+        </div>
+    </body>
+</html>
